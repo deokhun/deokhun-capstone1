@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="4_wheel_test">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0367858487142706 7.02365588651542E-05 0.115228945559885"
+        rpy="0 0 0" />
+      <mass
+        value="2.51249390515751" />
+      <inertia
+        ixx="0.0196353971058642"
+        ixy="-9.99657696437685E-19"
+        ixz="1.22598987691641E-05"
+        iyy="0.0237815617612087"
+        iyz="2.0350499262099E-17"
+        izz="0.0429113982305248" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_1">
+    <inertial>
+      <origin
+        xyz="0.017669 -2.0514E-05 6.2467E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.19333" />
+      <inertia
+        ixx="0.00025298"
+        ixy="4.6921E-08"
+        ixz="-1.4293E-09"
+        iyy="0.00013675"
+        iyz="-1.608E-09"
+        izz="0.00013672" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.113 0.25075 0.079213"
+      rpy="1.2292 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="3.1"
+      velocity="7" />
+  </joint>
+  <link
+    name="wheel_2">
+    <inertial>
+      <origin
+        xyz="0.017669 -2.0514E-05 6.2467E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.19333" />
+      <inertia
+        ixx="0.00025298"
+        ixy="4.6921E-08"
+        ixz="-1.4293E-09"
+        iyy="0.00013675"
+        iyz="-1.608E-09"
+        izz="0.00013672" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.228 0.25075 0.078201"
+      rpy="1.3884 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="3.1"
+      velocity="7" />
+  </joint>
+  <link
+    name="wheel_3">
+    <inertial>
+      <origin
+        xyz="0.017669 -2.0514E-05 6.2467E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.19333" />
+      <inertia
+        ixx="0.00025298"
+        ixy="4.6921E-08"
+        ixz="-1.4293E-09"
+        iyy="0.00013675"
+        iyz="-1.608E-09"
+        izz="0.00013672" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_3_joint"
+    type="continuous">
+    <origin
+      xyz="0.113 -0.25075 0.079215"
+      rpy="1.9025 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="6.2"
+      velocity="14" />
+  </joint>
+  <link
+    name="wheel_4">
+    <inertial>
+      <origin
+        xyz="0.017669 -2.0514E-05 6.2467E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.19333" />
+      <inertia
+        ixx="0.00025298"
+        ixy="4.6921E-08"
+        ixz="-1.4293E-09"
+        iyy="0.00013675"
+        iyz="-1.608E-09"
+        izz="0.00013672" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4_wheel_test/meshes/wheel_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.228 -0.25075 0.078199"
+      rpy="1.7433 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="6.2"
+      velocity="14" />
+  </joint>
+</robot>
